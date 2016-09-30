@@ -20,10 +20,23 @@
  
  * Connections for BMP180
    ===========
-   Connect SCL to analog 5
-   Connect SDA to analog 4
+   Connect SCL to analog 5    (for Arduino Uno)
+   Connect SDA to analog 4    (for Arduino Uno)
+   Connect SCL to Digital 12  (for Arduino MKR1000)
+   Connect SDA to Digital 11  (for Arduino MKR1000)
    Connect VDD to 3.3V DC
    Connect GROUND to common ground
+
+ * Connections fot the Photo resistor
+   ===========
+   Connect to analog pin A2 with a 10KOhm resistor 
+   in voltage divider configuration
+            10KOhm         Photoresistor
+   GND ---\/\/\/\/-----*---------O-------- A2
+                       |
+                       |
+                       |
+                       5V
 
  created 6 September 2016
  by Peter Dalmaris
